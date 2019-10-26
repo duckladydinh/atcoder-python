@@ -29,7 +29,9 @@ def main():
                 z = data['weight']
                 if dist[y] + z + other_dist[x] == tot_dist:
                     cnt[x] = (cnt[x] + cnt[y]) % MOD
-
+    
+    # the reason for considering only middle points as possible meeting point is because they traval at the same speed
+    # so if they meet somewhere, it got to be some middle point.
     res = 0
     for x in range(1, n + 1):
         if src_dist[x] == dst_dist[x] and src_dist[x] + dst_dist[x] == tot_dist:
