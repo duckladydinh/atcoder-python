@@ -48,6 +48,4 @@ def main():
 
 
 if __name__ == "__main__":
-    # Problem: https://atcoder.jp/contests/arc090/tasks/arc090_c
-    # Libraries: networkx, numpy
     main()
